@@ -1,0 +1,55 @@
+/* Custom styles for GerProTP3 */
+body {
+    background-color: #f8f9fa;
+}
+
+.card {
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+    border: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+.card-header {
+    font-weight: 600;
+}
+
+.table th {
+    border-top: none;
+    font-weight: 600;
+}
+
+.btn-group .btn {
+    margin-right: 0.25rem;
+}
+
+/* Validation styles */
+.input-validation-error {
+    border-color: #dc3545;
+}
+
+.field-validation-error {
+    color: #dc3545;
+    font-size: 0.875rem;
+}
+
+/* Custom badge styles */
+.badge {
+    font-size: 0.75rem;
+}
+
+/* Hover effects */
+.table-hover tbody tr:hover {
+    background-color: rgba(0, 0, 0, 0.075);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .btn-group {
+        display: flex;
+        flex-direction: column;
+    }
+
+        .btn-group .btn {
+            margin-bottom: 0.25rem;
+            margin-right: 0;
+        }
+}

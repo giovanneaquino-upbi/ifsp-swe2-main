@@ -1,0 +1,48 @@
+﻿@model GerProTP3.Models.Product
+
+@{
+    ViewData["Title"] = "Detalhes do Produto";
+}
+
+<div class="row">
+    <div class="col-md-8 offset-md-2">
+        <div class="card">
+            <div class="card-header bg-info text-white">
+                <h2 class="card-title mb-0">
+                    <i class="bi bi-info-circle"></i> @ViewData["Title"]
+                </h2>
+            </div>
+            <div class="card-body">
+                <dl class="row">
+                    <dt class="col-sm-3">@Html.DisplayNameFor(model => model.Name)</dt>
+                    <dd class="col-sm-9">@Html.DisplayFor(model => model.Name)</dd>
+
+                    <dt class="col-sm-3">@Html.DisplayNameFor(model => model.Description)</dt>
+                    <dd class="col-sm-9">@Html.DisplayFor(model => model.Description)</dd>
+
+                    <dt class="col-sm-3">@Html.DisplayNameFor(model => model.Price)</dt>
+                    <dd class="col-sm-9">R$ @Html.DisplayFor(model => model.Price)</dd>
+
+                    <dt class="col-sm-3">@Html.DisplayNameFor(model => model.StockQuantity)</dt>
+                    <dd class="col-sm-9">
+                        <span class="badge @(Model.StockQuantity > 0 ? "bg-success" : "bg-danger")">
+                            @Html.DisplayFor(model => model.StockQuantity) unidades
+                        </span>
+                    </dd>
+
+                    <dt class="col-sm-3">@Html.DisplayNameFor(model => model.CreatedAt)</dt>
+                    <dd class="col-sm-9">@Model.CreatedAt.ToString("dd/MM/yyyy HH:mm")</dd>
+                </dl>
+
+                <div class="mt-4">
+                    <a asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-warning">
+                        <i class="bi bi-pencil"></i> Editar
+                    </a>
+                    <a asp-action="Index" class="btn btn-secondary">
+                        <i class="bi bi-arrow-left"></i> Voltar para a Lista
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,105 @@
+# .gitignore para repositório .NET / Visual Studio
+# Gerado automaticamente — inclui padrões comuns para bin/obj, Visual Studio, NuGet, logs e arquivos temporários
+
+############################
+# Build / Output
+############################
+bin/
+obj/
+**/bin/
+**/obj/
+
+############################
+# Visual Studio
+############################
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.csproj.user
+
+############################
+# Rider / ReSharper
+############################
+.idea/
+_ReSharper*/
+*.DotSettings.user
+
+############################
+# NuGet
+############################
+packages/
+*.nupkg
+project.lock.json
+project.nuget.cache
+*.nuget.props
+*.nuget.targets
+
+############################
+# ASP.NET / Web
+############################
+wwwroot/node_modules/
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+############################
+# Publish / Deployment
+############################
+publish/
+*.Publish.xml
+*.publishsettings
+
+############################
+# Logs, DBs e dados gerados
+############################
+*.log
+*.sql
+*.sqlite
+*.db
+*.db3
+*.mdf
+*.ldf
+
+############################
+# Secrets / certificados
+############################
+secrets.json
+*.pfx
+*.key
+.env
+.env.*
+
+############################
+# Test / Coverage
+############################
+TestResults/
+*.trx
+coverage/
+coverage*.xml
+
+############################
+# OS / Editor
+############################
+.vscode/
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+############################
+# Outros (artefatos temporários)
+############################
+*.cache
+*.log
+*.pid
+*.seed
+
+# Visual Studio Code workspace storage
+.history/
+
+# JetBrains IDEs
+/.idea/
+
+# End of file
